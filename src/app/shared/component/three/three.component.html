@@ -1,0 +1,7 @@
+<p class="alert alert-info" *ngIf="username; else nousername">
+    The username is <strong>{{username}}</strong>
+</p>
+
+<ng-template #nousername>
+    <p class="alert alert-info text-danger">No username recieved</p>
+</ng-template>
